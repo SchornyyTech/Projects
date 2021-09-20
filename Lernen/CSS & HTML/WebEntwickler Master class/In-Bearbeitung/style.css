@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(200, 200, 200);
+}
+
+.container {
+  background-color: white;
+  border: 1px solid rgb(100, 100, 100);
+  padding: 10px;
+  margin: 25px auto;
+}
+
+.container img {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
+}

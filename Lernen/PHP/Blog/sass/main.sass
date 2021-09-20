@@ -1,0 +1,141 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: #101731
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .container
+        padding-top: 2rem
+        width: 70%
+        height: 50%
+        display: flex
+        flex-direction: column
+
+        h1
+            color: white
+        p
+            color: white
+
+        ul
+            padding-top: 2rem
+            list-style-type: none
+            display: flex
+            flex-direction: column
+
+            li
+                color: white
+                padding-top: 0.5rem
+                padding-bottom: 0.5rem
+            a
+                color: white
+                text-decoration: none
+
+        .post
+            width: 100%
+            background-color: #1c1138
+
+            .post-title
+                background-color: #104dbe
+                display: flex
+                flex-direction: column
+                height: 100px
+                justify-content: center
+                align-items: center
+                p
+                    color: white
+                    font-size: 30px
+
+            .post-content
+                background: #0224bb
+                display: flex
+                flex-direction: column
+                min-height: 250px
+                width: 100%
+
+                p
+                    margin-top: 1rem
+                    margin-left: 1rem
+                    color: white
+                    font-size: 26px
+
+    .comments
+        width: 70%
+        height: 20%
+        display: flex
+        flex-direction: column
+        padding-top: 1rem
+        background-color: #616161
+
+        form
+            margin-left: 1rem
+            display: flex
+            flex-direction: row
+            width: 100
+            height: 10%
+
+            textarea
+                width: 50%
+
+        ul
+            list-style-type: none
+            margin: 1rem 0 1rem 1rem
+            width: 70%
+
+            li
+                color: white
+                font-size: 20px
+                width: 100%
+                background: #333333
+                padding: 1rem
+                margin-top: 0.5rem
+
+    .login-wrapper
+        display: flex
+        flex-direction: column
+        width: 70%
+        min-height: 50vh
+        justify-content: center
+        align-items: center
+
+        p
+            color: white
+            font-size: 20px
+
+        form
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            label
+                color: white
+                font-size: 18px
+                margin-top: 0.5rem
+
+            input
+                max-width: 200px
+
+                &:focus
+                    outline: none
+
+            button
+                margin: 0.5rem 0
+                min-width: 100px
+                max-width: 200px
+                padding: 0.5rem
+                font-size: 20px
+                color: white
+                background-color: transparent
+                border: 1px solid white
+
+                &:hover
+                    background-color: white
+                    color: #101731

@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  border: 5px solid black;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container .carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-container #prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-container #nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

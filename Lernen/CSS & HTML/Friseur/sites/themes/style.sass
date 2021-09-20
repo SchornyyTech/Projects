@@ -1,0 +1,525 @@
+$primary-color: #bd8439
+$secondary-color: #eeb02b
+$text-color: #e4e2e2
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    background-color: #333232
+
+.nav
+    z-index: 100
+    display: flex
+    flex-direction: row
+    width: 100%
+    height: 60px
+    background-color: #636363d2
+
+    .nav-left
+        width: 50%
+        height: 100%
+
+        img
+            margin-left: 2rem
+            height: 100%
+            width: auto
+
+    .nav-right
+        width: 50%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .desktop-nav
+            list-style-type: none
+            display: none
+            flex-direction: row
+
+            li
+                padding-right: 2rem
+
+                a
+                    font-size: 24px
+                    color: $text-color
+                    text-decoration: none
+                    transition: all 0.2s ease-in-out
+
+                    &:hover
+                        color: $primary-color
+
+        .mobile-nav
+            position: relative
+            display: flex
+            flex-direction: column
+            height: 100%
+            width: 100%
+            justify-content: center
+            align-items: flex-end
+            padding-right: 2rem
+            .mobile-nav-burger
+                display: flex
+                flex-direction: column
+                div
+                    background-color: $text-color
+                    height: 5px
+                    width: 20px
+                    margin-top: 5px
+
+            ul
+                position: absolute
+                top: 45px
+                right: 0
+                margin-top: 1rem
+                z-index: 1000
+                list-style-type: none
+                display: none
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                background-color: #333232
+                width: 300px
+                height: auto
+                li
+                    padding: 0.5rem
+                    a
+                        margin: 0.2rem
+                        text-decoration: none
+                        cursor: pointer
+                        color: $text-color
+
+                        &:hover
+                            color: $primary-color
+            &:hover
+                .mobile-nav-burger
+                    div
+                        background-color: $secondary-color !important
+
+                ul
+                    display: flex !important
+.header
+    width: 100%
+    height: 100%
+    position: relative
+    border-top: 1px solid $secondary-color
+
+    img
+        height: 100%
+        width: 100%
+        object-fit: fill
+
+    .content
+        position: absolute
+        top: 0
+        right: 2rem
+        display: flex
+        flex-direction: column
+        width: 30%
+        height: 100%
+        justify-content: center
+
+        h1
+            color: $secondary-color
+            padding-bottom: 2rem
+            font-weight: bold
+
+        p
+            color: $text-color
+            padding-bottom: 1.5rem
+            font-size: 1.2rem
+
+        button
+            margin-top: 0.5rem
+            height: 2rem
+            width: 20rem
+            border: 1px solid $secondary-color
+            color: $text-color
+            background: $primary-color
+            cursor: pointer
+            font-weight: bold
+
+            &:hover
+                color: $secondary-color
+                background-color: transparent
+
+.service
+    width: 100%
+    padding-bottom: 4rem
+    border-top: 1px solid $secondary-color
+    display: flex
+    flex-direction: column
+
+    .header
+        padding-top: 2rem
+        width: 100%
+        height: auto
+        display: flex
+        justify-content: center
+        align-items: center
+
+        h1
+            color: $text-color
+            font-size: 36px
+            border-bottom: 1px solid $primary-color
+
+    .content
+        display: flex
+        flex-direction: row
+        width: 100%
+        .show
+            margin-top: 2rem
+            height: 50%
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            h1
+                margin-bottom: 1rem
+                color: $text-color
+                border-bottom: 1px solid $primary-color
+
+            ul
+                display: flex
+                flex-direction: column
+                text-decoration: none
+                color: $text-color
+
+                li
+                    margin-bottom: 0.5rem
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+
+                    p
+                        padding-left: 2rem
+                        font-size: 1.2rem
+
+.team
+    height: auto
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #494949
+    margin-top: 2rem
+    padding-bottom: 4rem
+
+    .header
+        padding-top: 2rem
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        h1
+            color: $text-color
+            border-bottom: 1px solid $primary-color
+
+    .show
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: auto
+        margin-top: 2rem
+
+        .row
+            display: flex
+            flex-direction: row
+            height: auto
+            width: 100%
+            justify-content: center
+            align-items: center
+            margin-top: 1.5rem
+
+            .card:nth-child(2)
+                margin: 0 1.5rem
+
+            .card
+                display: flex
+                flex-direction: column
+                width: 15rem
+                height: auto
+                background-color: #333232
+                transition: all 0.3s ease-in-out
+                cursor: pointer
+
+                &:hover
+                    width: 20rem
+                    height: 25rem
+                    box-shadow: 3px 14px 17px 0px rgba(0,0,0,0.76)
+
+                    .card-content
+                        display: flex
+
+                .card-img
+                    border-bottom: 1px solid $secondary-color
+                    width: 100%
+                    height: 10rem
+                    img
+                        height: 100%
+                        width: 100%
+                        object-fit: cover
+
+                .card-header
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 0.5rem
+                    border-bottom: 1px solid $secondary-color
+
+                    h1
+                        color: $text-color
+                        margin: 0
+
+                .card-content
+                    width: 100%
+                    height: 100%
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    display: none
+
+                    p
+                        color: $text-color
+                        font-size: 14px
+                        padding: 2rem
+.location
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 4rem
+    padding-top: 2rem
+    border-top: 1px solid $secondary-color
+
+    h1
+        color: $text-color
+        border-bottom: 1px solid $primary-color
+        margin-bottom: 2rem
+
+    .container
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+
+        .maps
+            width: 50%
+            height: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            h2
+                color: $text-color
+                margin-bottom: 1rem
+                border-bottom: 1px solid $primary-color
+
+            img
+                height: 100%
+                width: 100%
+        .opening
+            width: 50%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            .open
+                display: flex
+                flex-direction: column
+                width: 100%
+                height: 50%
+                justify-content: center
+                align-items: center
+
+                h2
+                    color: $text-color
+                    border-bottom: 1px solid $primary-color
+                    margin-bottom: 1rem
+
+                ul
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    li
+                        width: 50%
+                        height: auto
+                        list-style-type: none
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        color: $text-color
+                        padding-bottom: 1rem
+                        font-size: 18px
+            .kontakt
+                margin-top: 2rem
+                display: flex
+                flex-direction: column
+                width: 100%
+                height: 50%
+                justify-content: center
+                align-items: center
+
+                h2
+                    color: $text-color
+                    border-bottom: 1px solid $primary-color
+                    margin-bottom: 1rem
+                ul
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    li
+                        width: 50%
+                        height: auto
+                        list-style-type: none
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        color: $text-color
+                        padding-bottom: 1rem
+                        font-size: 18px
+.footer
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    padding-top: 2rem
+    border-top: 1px solid $secondary-color
+    padding-bottom: 2rem
+    background-color: #494949
+
+    .info
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        h2
+            color: $text-color
+            border-bottom: 1px solid $primary-color
+            margin-bottom: 1rem
+
+        ul
+            display: flex
+            flex-direction: column
+            width: 100%
+
+            li
+                display: flex
+                flex-direction: row
+                color: $text-color
+                list-style-type: none
+                justify-content: space-between
+                margin-bottom: 0.5rem
+
+                a
+                    color: $text-color
+                    text-decoration: none
+
+                    &:hover
+                        color: $secondary-color
+
+@media screen and ( max-width: 1920px)
+    .nav-right
+        justify-content: center
+        .desktop-nav
+            display: flex !important
+
+        .mobile-nav
+            display: none !important
+
+@media screen and ( max-width: 1024px)
+
+    .service
+        .content
+            flex-direction: column !important
+            .show
+                width: 100%
+                p
+                    font-size: 18px
+    .footer
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .info
+            padding-top: 2rem
+            width: 50%
+            justify-content: center
+            align-items: center
+
+    .location
+        flex-direction: column !important
+        .container
+            flex-direction: column
+            justify-content: space-around
+            .maps
+                width: 100%
+                justify-content: space-around
+            .opening
+                padding-top: 1rem
+                width: 100%
+                .open
+                    width: 100%
+                    ul
+                        li
+                            width: 100%
+                            padding: 0.2rem 5rem
+            .kontakt
+                ul
+                    align-items: normal !important
+                    li
+                        justify-content: space-between
+                        width: 100% !important
+                        padding: 0.2rem 5rem
+
+    .nav-right
+        justify-content: flex-end
+
+        .desktop-nav
+            display: none !important
+
+        .mobile-nav
+            display: flex !important
+            flex-direction: row
+
+    .header
+        .content
+            h1
+                font-size: 12px !important
+                padding-bottom: 1rem !important
+            p
+                font-size: 8px !important
+                padding-bottom: 0.4rem !important
+            button
+                height: 1rem !important
+                width: 7rem !important
+    .team
+        .show
+            .row
+                margin: 0
+                padding: 0
+                flex-direction: column !important
+                .card
+                    margin-bottom: 1rem !important

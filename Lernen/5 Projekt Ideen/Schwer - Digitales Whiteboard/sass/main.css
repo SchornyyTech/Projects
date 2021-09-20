@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+#canvas {
+  border: 2px solid black;
+}
+/*# sourceMappingURL=main.css.map */

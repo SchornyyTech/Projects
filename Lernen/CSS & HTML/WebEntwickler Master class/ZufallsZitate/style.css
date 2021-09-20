@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  background-color: rgb(6, 155, 255);
+  color: white;
+  text-align: center;
+  height: 20%;
+  display: block;
+  width: 100%;
+}
+
+.header h1 {
+  padding-top: 35px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+#btn {
+  display: block;
+  height: 75px;
+  width: 150px;
+  margin: 50px auto;
+  background-color: rgb(6, 155, 255);
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 20px;
+}
+
+#btn:hover {
+    background-color: rgb(2, 118, 196);
+}
+
+#zitat {
+    display: block;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+    margin: 0px auto;
+    color: black;
+    font-size: 40px;
+}
+
+#author {
+    display: block;
+    text-align: left;
+    color: black;
+    width: 50%;
+    margin: 0px 20%;
+    font-size: 40px;
+    font-style: oblique;
+}

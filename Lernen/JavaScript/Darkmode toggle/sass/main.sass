@@ -1,0 +1,65 @@
+$prime: #ff6e48
+$second: #0c1016
+
+*
+    box-sizing: border-box
+
+body, html
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    font-size: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: var(--secondColor)
+
+    &.light
+        --primeColor: #172336
+        --secondColor: #FFFFFF
+        --textColor: #9da8b9
+    &.dark
+        --primeColor: #FFFF
+        --secondColor: #172336
+        --textColor: #9da8b9
+
+.wrapper
+    max-width: 80%
+    height: 100vh
+    margin: 15rem 0 0 0
+    display: flex
+    justify-content: flex-start
+    align-content: center
+    flex-direction: column
+
+    h1
+        max-width: 80%
+        font-weight: 300
+        font-size: 3.5rem
+        color: var(--primeColor)
+    h3
+        margin: 10rem 0 5rem 0
+        max-width: 80%
+        font-weight: 300
+        font-size: 2.5rem
+        color: var(--textColor)
+
+        span
+            width: 100%
+            display: inline-block
+            color: var(--primeColor)
+    button
+        padding: 1.5rem
+        border: 0.1rem solid var(--primeColor)
+        font-size: 1.8rem
+        color: var(--primeColor)
+        border-radius: 1rem
+        margin: 5rem 0 5rem 0
+        max-width: 15rem
+        background-color: var(--secondColor)
+        text-align: center
+        &:hover
+            background-color: var(--primeColor)
+            color: var(--secondColor)
+            cursor: pointer

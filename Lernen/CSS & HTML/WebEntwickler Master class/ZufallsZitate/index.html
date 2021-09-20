@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zufällige Zitate</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Bekannte Zitate</h1>
+      </div>
+      <div class="content">
+        <button type="button" id="btn">Generieren</button>
+        <p id="zitat"></p>
+        <p id="author"></p>
+      </div>
+    </div>
+
+    <script>
+      function getRandomZitat() {
+        var zitate = new Array('lorem ipsum', 'test 2', 'test 3');
+        var rnd = Math.floor(Math.random() * zitate.length);
+        return zitate[rnd];
+      }
+
+      function getRandomAuthor() {
+        var author = new Array('Ja', 'nein', 'test');
+        var rnd = Math.floor(Math.random() * author.length);
+        return author[rnd];
+      }
+
+      document.getElementById('btn').onclick = function () {
+        document.getElementById('zitat').innerHTML = getRandomZitat();
+        document.getElementById('author').innerHTML = getRandomAuthor();
+      };
+    </script>
+  </body>
+</html>

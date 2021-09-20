@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--secondColor);
+}
+
+body.light, html.light {
+  --primeColor: #172336;
+  --secondColor: #FFFFFF;
+  --textColor: #9da8b9;
+}
+
+body.dark, html.dark {
+  --primeColor: #FFFF;
+  --secondColor: #172336;
+  --textColor: #9da8b9;
+}
+
+.wrapper {
+  max-width: 80%;
+  height: 100vh;
+  margin: 15rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper h1 {
+  max-width: 80%;
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: var(--primeColor);
+}
+
+.wrapper h3 {
+  margin: 10rem 0 5rem 0;
+  max-width: 80%;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: var(--textColor);
+}
+
+.wrapper h3 span {
+  width: 100%;
+  display: inline-block;
+  color: var(--primeColor);
+}
+
+.wrapper button {
+  padding: 1.5rem;
+  border: 0.1rem solid var(--primeColor);
+  font-size: 1.8rem;
+  color: var(--primeColor);
+  border-radius: 1rem;
+  margin: 5rem 0 5rem 0;
+  max-width: 15rem;
+  background-color: var(--secondColor);
+  text-align: center;
+}
+
+.wrapper button:hover {
+  background-color: var(--primeColor);
+  color: var(--secondColor);
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

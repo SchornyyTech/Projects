@@ -1,0 +1,318 @@
+body,
+html {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #021111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 10px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1rem solid #00E5FF;
+}
+
+.controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.controls form {
+  width: 100%;
+  max-width: 25rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.controls form button {
+  color: #021111;
+  border: none;
+  border-radius: 1rem;
+  width: 25rem;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #00E5FF;
+}
+
+.controls form .length-value {
+  color: white;
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.controls form .length-value #length-value {
+  color: #00E5FF;
+}
+
+.controls form input[type="range"] {
+  margin: 2rem 0 0 0;
+  -webkit-appearance: none;
+}
+
+.controls form input[type="range"]:focus {
+  outline: none;
+}
+
+.controls form input[type="range"]::-webkit-slider-runnable-track {
+  background: #042121;
+  height: 1rem;
+}
+
+.controls form input[type="range"]::-moz-range-track {
+  background: #042121;
+  height: 1rem;
+}
+
+.controls form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background: #00E5FF;
+  margin-top: -0.5rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  border-radius: 50%;
+}
+
+.controls form input[type="range"]::-moz-range-thumb {
+  height: 2rem;
+  width: 2rem;
+  background: #00E5FF;
+  cursor: grab;
+  margin-top: -0.5rem;
+  border-radius: 50%;
+}
+
+.password {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: copy;
+}
+
+.password .copyed {
+  text-align: center;
+  color: white;
+  margin: 3rem 0 3rem 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.password .copyed.copyed-done {
+  -webkit-animation: copyed-done 500ms forwards;
+          animation: copyed-done 500ms forwards;
+}
+
+.password .characters {
+  width: 100%;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.password .characters .character {
+  font-size: 3rem;
+  color: white;
+  width: 4.5rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  -webkit-transition: all 550ms;
+  transition: all 550ms;
+  background-color: #042121;
+}
+
+.password .characters .character.show {
+  -webkit-animation: showletter 200ms forwards;
+          animation: showletter 200ms forwards;
+}
+
+.password .characters .character.done {
+  color: #021111;
+  background-color: #00E5FF;
+}
+
+.password .characters .character.animate {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  color: white;
+}
+
+.toggle {
+  margin: 0 0 2rem 0;
+  padding: 0 0 0 6rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle input:checked + .roundbutton {
+  background-color: #00E5FF;
+}
+
+.toggle input:checked + .roundbutton:before {
+  -webkit-transform: translate(1.7rem, 0);
+          transform: translate(1.7rem, 0);
+}
+
+.toggle .roundbutton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  height: 2.2rem;
+  background-color: #042121;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 3.4rem;
+  cursor: pointer;
+}
+
+.toggle .roundbutton:before {
+  position: absolute;
+  content: "";
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 100%;
+  display: block;
+  left: 0.5rem;
+  bottom: 0.4rem;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@-webkit-keyframes showletter {
+  0% {
+    -webkit-transform: translate(0, 15rem);
+            transform: translate(0, 15rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes showletter {
+  0% {
+    -webkit-transform: translate(0, 15rem);
+            transform: translate(0, 15rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes copyed-done {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #00E5FF;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes copyed-done {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #00E5FF;
+  }
+  100% {
+    color: white;
+  }
+}
+/*# sourceMappingURL=main.css.map */
